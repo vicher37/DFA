@@ -24,7 +24,7 @@ def process():
     # get the length of these words and sort ascending
     words['length'] = words[0].apply(len)
     words = words.sort(columns='length')
-    return words
+    return words[0].values
 
 if __name__ == '__main__':
     print(process())
